@@ -1,0 +1,1 @@
+console.log("Hi! Ritesh welcome to Javascript world.");
