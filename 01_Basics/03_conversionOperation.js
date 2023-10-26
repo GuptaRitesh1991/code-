@@ -28,4 +28,12 @@ console.log (valueInNumber1 );
 
 let isLoggedIn = 1
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-console.log(booleanIsLoggedIn); // 1 turn to true 0 converted False, "" gives false and "Hitesh" gives true
+//console.log(booleanIsLoggedIn); 
+// 1 turn to true 0 converted False, "" gives false and "Hitesh" gives true
+
+// ********************************************* Operations **************************************************
+
+let value = 3
+let negValue = -value
+//console.log(negValue);
+
