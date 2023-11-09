@@ -22,5 +22,54 @@ const regularUser =
                 }
         }
 }
-console.log(regularUser.fullName.userFullName);
+//console.log(regularUser.fullName.userFullName);
 
+// =========== source object merging in target object
+
+const obj1 = {1:"a", 2:"b"}
+
+const obj2 = {3:"a", 4:"b"}
+
+const obj3 = {5:"a", 6:"b"}
+//const obj3 = {obj1,obj2} // not the right way to do it.
+
+//const obj4 = Object.assign({},obj1,obj2,obj3) // right way merge object, source object to target object
+
+const obj4 = {...obj1,...obj2,...obj3} // best way to merge objects with spread operator
+
+//console.log(obj4);
+
+const arrUser = [
+
+    {
+    id:1,
+    email:"hr@gmail.com"
+    },
+
+    
+    {
+        id:1,
+        email:"hr@gmail.com"
+        },
+        
+    {
+        id:1,
+        email:"hr@gmail.com"
+        },
+        {
+        id:1,
+        email:"hr@gmail.com"
+        },
+        {
+        id:1,
+        email:"hr@gmail.com"
+        }
+]
+
+arrUser[1].email
+console.log(tinder)
+
+console.log(Object.keys(tinder)); // to get Keys of Object
+console.log(Object.values(tinder));// to get values of an object
+console.log(Object.entries(tinder)) // gives array inside array of each and Key and its value
+console.log(tinder.hasOwnProperty("isLoggedIn"))// check for particular key is available or not and gives boolean result
