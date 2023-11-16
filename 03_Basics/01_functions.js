@@ -53,5 +53,42 @@ if (username === undefined) // or (!username) both have same meaning
 
 
 
-console.log(loginUserMessage());
+//console.log(loginUserMessage());
 
+
+function calculateCartPrice(val1,...num3) // this is called rest operator, which allows user to add multiple values in the form of array mostly used in Ecom for adding multiple values price 
+{
+    return num3    
+}
+
+//console.log(calculateCartPrice(200,300,400));
+
+// How to handle objects in function
+
+const user = {
+
+username : "Ritesh",
+
+Price : 199
+
+}
+
+function objectHandler(anyobject) 
+{
+
+//    console.log(`username is ${anyobject.username} and price is ${anyobject.Price} `);
+
+}
+
+objectHandler(user)
+
+// How to pass arrays in function
+
+const myNewArr = [200,300,500,600]  // define and declair array
+
+function returnArrayValue(getArray) 
+{
+ return getArray[3]    // retruned 4 value of array
+}
+
+console.log(returnArrayValue(myNewArr)); // call fucntion with actual parameter of array and print with console log
