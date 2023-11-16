@@ -67,9 +67,42 @@ const arrUser = [
 ]
 
 arrUser[1].email
-console.log(tinder)
+//console.log(tinder)
 
-console.log(Object.keys(tinder)); // to get Keys of Object
-console.log(Object.values(tinder));// to get values of an object
-console.log(Object.entries(tinder)) // gives array inside array of each and Key and its value
-console.log(tinder.hasOwnProperty("isLoggedIn"))// check for particular key is available or not and gives boolean result
+//console.log(Object.keys(tinder)); // to get Keys of Object
+//console.log(Object.values(tinder));// to get values of an object
+//console.log(Object.entries(tinder)) // gives array inside array of each and Key and its value
+//console.log(tinder.hasOwnProperty("isLoggedIn"))// check for particular key is available or not and gives boolean result
+
+//===================== De-structuring =======================================
+
+const course = {
+
+cousreName: "js learning",
+price: 999,
+courseInstructor:"Ritesh"
+}
+
+// normal way to access course value 
+
+const {courseInstructor: instructor} = course
+
+console.log(instructor)
+
+
+// below are example of JSON, it similar to object but ojects always have names. and keys always written in ":"
+
+{
+
+    "cousreName": "js learning",
+"price": 999,
+"courseInstructor":"Ritesh"
+
+
+}
+
+[
+    {},
+    {},
+    {}
+] 
