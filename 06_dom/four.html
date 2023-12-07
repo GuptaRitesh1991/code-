@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh DOM practice</title>
+</head>
+<body style="background-color: black;color: white;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    <script></script>
+</body>
+<script>
+    //using function I want to pass list of languages, so create function
+    function addLanguage(langName) { 
+
+        const li = document.createElement("li")
+        li.innerHTML = `${langName}`
+    // Now select using queryselector where you want to append the list
+        const lName= document.querySelector(".language").appendChild(li)
+
+    }
+
+    addLanguage("C#","Java","Tava")
+    addLanguage("TypeScript")
+
+// Lets do it in optimize way of adding language, because with above method if 1000 of records then for each entry system has to traverse from top to bottom
+
+function addOptiLanguage(optilang) {
+    const li = document.createElement("li")
+        li.appendChild(document.createTextNode(optilang))
+    document.querySelector(".language").appendChild(li)
+
+}
+    addOptiLanguage("JDK Language")
+
+// Now i want to Edit any value from html web page
+
+const secondLang = document.querySelector("li:nth-child(2)")
+//secondLang.innerHTMl = "Mojo"
+const newLi=document.createElement("li")
+newLi.textContent = "Mojo"
+secondLang.replaceWith(newLi)
+
+
+// edit 2 example
+const firstLang = document.querySelector("li:first-child") // or you also write li:first-child  or "li:nth-child(1)"
+console.log(firstLang);
+firstLang.outerHTMl = "<li> TypeScript </li>"
+
+// remove
+
+const lastLang = document.querySelector("li:last-child")
+lastLang.remove()
+
+</script>
+</html>
