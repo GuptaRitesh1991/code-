@@ -12,3 +12,13 @@ const myNum = myNumbers
                 .filter( (num)=>num > 50)
                 
 console.log(myNum);
+
+
+switch (key) {
+    case value:
+        
+        break;
+
+    default:
+        break;
+}
