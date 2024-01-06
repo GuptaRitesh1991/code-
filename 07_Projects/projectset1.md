@@ -98,7 +98,17 @@ else
 ## Project 3 
 
 ```JavaScript
+// Digital clock
 
+const clock = document.getElementById("clock")
+// or above and below both are right
+// const clock = document.querySelector('#clock')
+// console.log(clock)
+setInterval(function() // very important method to handle timer, will help to display time after 1 milli or 2 milli
+{
+  let date =new Date()
+  clock.innerHTML=date.toLocaleTimeString()
 
+},1000)
 
 ```
